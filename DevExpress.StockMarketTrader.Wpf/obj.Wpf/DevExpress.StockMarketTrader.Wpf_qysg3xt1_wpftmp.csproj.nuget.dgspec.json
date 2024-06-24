@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\sonst.SONNY_GAMING\\source\\repos\\DevExpress.StockMarketTrader.Wpf\\CS\\DevExpress.StockMarketTrader.Wpf\\DevExpress.StockMarketTrader.Wpf.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sonst.SONNY_GAMING\\source\\repos\\DevExpress.StockMarketTrader.Wpf\\CS\\DevExpress.StockMarketTrader.Wpf\\DevExpress.StockMarketTrader.Wpf.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sonst.SONNY_GAMING\\source\\repos\\DevExpress.StockMarketTrader.Wpf\\CS\\DevExpress.StockMarketTrader.Wpf\\DevExpress.StockMarketTrader.Wpf.csproj",
+        "projectName": "DevExpress.StockMarketTrader.Wpf",
+        "projectPath": "C:\\Users\\sonst.SONNY_GAMING\\source\\repos\\DevExpress.StockMarketTrader.Wpf\\CS\\DevExpress.StockMarketTrader.Wpf\\DevExpress.StockMarketTrader.Wpf.csproj",
+        "packagesPath": "C:\\Users\\sonst.SONNY_GAMING\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sonst.SONNY_GAMING\\source\\repos\\DevExpress.StockMarketTrader.Wpf\\CS\\DevExpress.StockMarketTrader.Wpf\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sonst.SONNY_GAMING\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\sonst.SONNY_GAMING\\Documents\\Steema TeeChart Pro for .NET 2023 v4.2023.2.21 (21 Feb 2023) for WinForms & WPF + CRACK": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "DevExpress.Wpf.Charts": {
+              "target": "Package",
+              "version": "[24.1.*-*, )"
+            },
+            "DevExpress.Wpf.Demos": {
+              "target": "Package",
+              "version": "[24.1.*-*, )"
+            },
+            "DevExpress.Wpf.Gauges": {
+              "target": "Package",
+              "version": "[24.1.*-*, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

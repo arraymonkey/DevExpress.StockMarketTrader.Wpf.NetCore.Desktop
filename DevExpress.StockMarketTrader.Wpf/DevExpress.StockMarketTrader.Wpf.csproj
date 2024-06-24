@@ -1,0 +1,89 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <BaseIntermediateOutputPath>obj.Wpf</BaseIntermediateOutputPath>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <ApplicationIcon>Resources\AppIcon.ico</ApplicationIcon>
+    <ConvertToNet6Windows />
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>bin\DebugTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DEBUGTEST</DefineConstants>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Update="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Update="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Update="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Update="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Update="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AppIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="clickonce.txt">
+      <netcore3ignore />
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Symbols.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\LogoStockMarket.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Wpf.Demos" Version="24.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Charts" Version="24.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Gauges" Version="24.1.*-*" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="obj.NCD\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Remove="obj.NCD\App.g.i.cs" />
+    <Compile Remove="obj.NCD\GeneratedInternalTypeHelper.g.i.cs" />
+    <Compile Remove="obj.NCD\MainWindow.g.i.cs" />
+    <Compile Remove="obj.NCD\Views\InformationPanel.g.i.cs" />
+    <Compile Remove="obj.NCD\Views\MarketDepthView.g.i.cs" />
+    <Compile Remove="obj.NCD\Views\OpenOrdersView.g.i.cs" />
+    <Compile Remove="obj.NCD\Views\OrderBookView.g.i.cs" />
+    <Compile Remove="obj.NCD\Views\OrderHistoryView.g.i.cs" />
+    <Compile Remove="obj.NCD\Views\StockChartView.g.i.cs" />
+    <Compile Remove="obj.NCD\Views\TabView.g.i.cs" />
+    <Compile Remove="obj.NCD\Views\TradeHistoryView.g.i.cs" />
+    <Compile Remove="obj.NCD\Views\TradesView.g.i.cs" />
+    <Compile Remove="obj.Wpf\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+  </ItemGroup>
+</Project>
